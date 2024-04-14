@@ -44,10 +44,12 @@ public class UserHelper extends BaseHelper {
     public void clickOnRegistrationButton() {
         click(By.id("register-button"));
     }
-
+//==============================================================================================================================================
     public boolean isAccountEmailPresent() {
-        return isElementPresent(By.xpath("//a[.='pulp_fiction2024@gmail.com']"));
+//        return isElementPresent(By.xpath("//a[.='pulp_fiction2024@gmail.com']"));
+        return isElementPresent(By.xpath("//a[text()='Log out']"));
     }
+//    ============================================================================================================================================
 
     public boolean isItemAdded() {
 

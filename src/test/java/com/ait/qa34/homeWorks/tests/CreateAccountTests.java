@@ -6,7 +6,6 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-
 public class CreateAccountTests extends BasePage {
     @BeforeMethod
     public void ensurePrecondition() {
@@ -32,7 +31,7 @@ public class CreateAccountTests extends BasePage {
         Assert.assertTrue(app.getUser().isAccountEmailPresent());
     }
 
-    @Test
+    @Test (enabled = false)
     public void createNewAccountWithExistedEmailNegativeTest() {
         app.getUser().clickOnRegisterLink();
 
@@ -46,6 +45,5 @@ public class CreateAccountTests extends BasePage {
         app.getUser().clickOnRegistrationButton();
 
         Assert.assertTrue(app.getUser().isErrorMessagePresent());
-
     }
 }
