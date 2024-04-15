@@ -1,26 +1,18 @@
 package com.ait.qa34.homeWorks.tests;
 
 import com.demowebshop.fw.ApplicationManager;
-import com.demowebshop.models.User;
 import org.openqa.selenium.remote.Browser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
-public class BasePage {
+public class TestBase {
     protected static ApplicationManager app = new ApplicationManager(System.getProperty("browser", Browser.CHROME.browserName()));
 
-    Logger logger = LoggerFactory.getLogger(BasePage.class);
+    Logger logger = LoggerFactory.getLogger(TestBase.class);
 
     //    @BeforeMethod
     @BeforeSuite

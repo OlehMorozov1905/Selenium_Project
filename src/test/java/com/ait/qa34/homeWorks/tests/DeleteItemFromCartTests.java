@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class DeleteItemFromCartTests extends BasePage {
+public class DeleteItemFromCartTests extends TestBase {
 
     @BeforeMethod
     public void ensurePrecondition() {
