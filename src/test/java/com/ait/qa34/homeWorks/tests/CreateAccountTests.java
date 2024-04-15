@@ -32,7 +32,7 @@ public class CreateAccountTests extends TestBase {
         Assert.assertTrue(app.getUser().isAccountEmailPresent());
     }
 
-    @Test (enabled = false)
+    @Test
     public void createNewAccountWithExistedEmailNegativeTest() {
         app.getUser().clickOnRegisterLink();
 
@@ -48,7 +48,7 @@ public class CreateAccountTests extends TestBase {
         Assert.assertTrue(app.getUser().isErrorMessagePresent());
     }
 
-    @Test(dataProvider = "createNewAccountFromCsvFile", dataProviderClass = DataProviders.class)
+    @Test(dataProvider = "createNewAccountFromCsvFile", dataProviderClass = DataProviders.class, enabled = false)
     public void createNewAccountPositiveTestFromDataProviderWithCsvFile(User user) {
         app.getUser().clickOnRegisterLink();
         app.getUser().fillRegisterForm(user);

@@ -25,7 +25,9 @@ public class AddItemToCartTests extends TestBase {
 
     @Test
     public void AddItemToCartPositiveTest() {
-        app.getUser().clickOnButtonAddItemToCartAndViewShoppingCart();
+        app.getUser().clickOnButtonAddItemToCart();
+        app.getUser().clickOnButtonShoppingCart();
+
         Assert.assertTrue(app.getUser().isItemAdded());
 
     }

@@ -73,8 +73,10 @@ public class UserHelper extends BaseHelper {
         click(By.xpath("//input[@name='updatecart']"));
     }
 
-    public void clickOnButtonAddItemToCartAndViewShoppingCart() {
+    public void clickOnButtonAddItemToCart() {
         click(By.xpath("(//input[@type='button'])[4]"));
+    }
+    public void clickOnButtonShoppingCart () {
         click(By.xpath("//span[contains(text(),'Shopping cart')]"));
     }
 

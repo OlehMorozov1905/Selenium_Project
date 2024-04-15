@@ -21,7 +21,8 @@ public class DeleteItemFromCartTests extends TestBase {
                 .setPassword(UserData.PASSWORD));
         app.getUser().clickOnLoginButton();
 
-        app.getUser().clickOnButtonAddItemToCartAndViewShoppingCart();
+        app.getUser().clickOnButtonAddItemToCart();
+        app.getUser().clickOnButtonShoppingCart();
     }
 
     @Test
